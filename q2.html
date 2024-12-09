@@ -1,1 +1,45 @@
-<!-- rewrite this document with the required content -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Berners-Lee, The Inventor of the World Wide Web</title>
+</head>
+
+<body>
+    <main>
+        <h1>The Inventor of the World Wide Web: Tim Berners-Lee</h1>
+        <figure>
+            <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">
+                <img src="TBLL.jfif" 
+                     alt="Tim Berners-Lee speaking at a conference" 
+                     width="300">
+            </a>
+            <figcaption>Tim Berners-Lee, inventor of the World Wide Web.</figcaption>
+        </figure>
+        <h2>The Three Parts of the Invention</h2>
+        <ul>
+            <li><strong>HyperText Markup Language:</strong> The language used to structure and present content on the web.</li>
+            <li><strong>HyperText Transfer Protocol:</strong> The protocol that allows the transfer of hypertext over the internet.</li>
+            <li><strong>Uniform Resource Locator:</strong> The address used to locate resources on the internet.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; <x-copyright-year></x-copyright-year> All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        class CopyrightYear extends HTMLElement {
+            connectedCallback() {
+                const currentYear = new Date().getFullYear();
+                this.innerHTML = currentYear;
+            }
+        }
+
+        customElements.define("x-copyright-year", CopyrightYear);
+    </script>
+</body>
+
+</html>
